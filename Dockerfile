@@ -2,4 +2,4 @@
 From tomcat:8-jre8 as build
 
  
-COPY /home/ubuntu/.jenkins/workspace/Docker-Job/webapp/target/webapp.war /usr/local/tomcat/webapps
+COPY /webapp/src/main/webapp/index.jsp /usr/local/tomcat/webapps
