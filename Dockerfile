@@ -1,4 +1,4 @@
 FROM tomcat:8
-LABEL app=my-app
-COPY target/*.war /usr/local/tomcat/webapps/myweb.war
+
+COPY scp /home/ubuntu/.jenkins/workspace/CICD-Pipeline/webapp/target/webapp.war /usr/local/tomcat/webapps/myweb.war
 # testing webhook
